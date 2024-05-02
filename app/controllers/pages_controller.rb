@@ -16,4 +16,8 @@ class PagesController < ApplicationController
     @user_number = params.fetch("user_number").to_f
     render ({ :template => "calc_templates/square_root_results"})
   end
+
+  def payment
+    render ({ :template => "calc_templates/payment"})
+  end
 end
