@@ -11,4 +11,5 @@ Rails.application.routes.draw do
 
   get("/payment/new", {:controller => "pages", :action => "payment"})
   
+  get("/payment/results", {:controller => "pages", :action => "payment_results"})
 end
